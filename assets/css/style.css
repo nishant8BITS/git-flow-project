@@ -1,0 +1,952 @@
+@import url('https://fonts.googleapis.com/css?family=Assistant:300,400,500,600,700|Dosis:300,400,500,600,700');
+
+/*-----------------------------------------------------------General*/
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    width: 150px;
+    border-top: 2px solid #b25c23;
+    margin-top: 8px;
+    margin-bottom: 4px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.content-wrapper {
+    background-color: #474747;
+    position: relative;
+    min-height: 100vh;
+}
+
+.container {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.container-fluid {
+    padding: 0;
+    min-width: 100%
+}
+
+.header {
+    padding: 0;
+}
+
+.header-title {
+    display: inline-block;
+    font-family: "Dosis", sans-serif;
+    text-transform: uppercase;
+    color: #e9f1f4;
+    background-color: #474747;
+    margin-top: 12px;
+    padding-top: 5px;
+}
+
+.desktop-row {
+    height: 192px;
+}
+
+.desktop-menu-item {
+    text-align: center;
+    background-color: red;
+    height: 192px;
+    width: 100%;
+    border-left: 1px solid #000;
+    padding-top: 50px;
+}
+
+.desktop-menu-item i {
+    font-size: 48px;
+    display: block;
+    color: rgb(244, 121, 26);
+}
+
+.desktop-menu-item .menu-heading {
+    font-family: "Dosis", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    letter-spacing: 2px;
+}
+
+.desktop-menu-background-image {
+    background: url("/assets/images/patrick-fore-23064-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    max-width: 100%;
+}
+
+.desktop-aside {
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(244, 121, 26);
+}
+
+.desktop-aside i {
+    color: #000;
+    margin: 0 auto;
+    font-size: 64px;
+    padding-top: 50px;
+    animation-name: spinning-icon;
+    animation-direction: normal;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    
+}
+
+@keyframes spinning-icon {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.section-header {
+    text-align: center;
+}
+
+.menu-anchor {
+    text-decoration: none !important;
+    min-height: 100%;
+}
+
+.menu-anchor:hover .menu-heading {
+    color: rgb(244, 121, 26);
+}
+
+.title-anchor {
+    text-decoration: none !important;
+}
+
+.menu-item {
+    background-color: rgba(244, 121, 26, 0.5);
+    padding: 15px 20px 15px 20px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.menu-item i {
+    font-size: 32px;
+    display: inline-block;
+    color: #000;
+}
+
+.mobile-menu-item {
+    text-align: center;
+    display: inline-block;
+    height: auto;
+    width: 25%;
+    padding-bottom: 32px;
+}
+
+.menu-heading {
+    font-family: "Dosis", sans-serif;
+    font-weight: 400;
+    color: #e9f1f4;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    letter-spacing: 2px;
+}
+
+/* implement this once you have a better understanding of data-toggling 
+.enter-button {
+    border: 1px solid #000;
+    background-color: rgba(244, 121, 26, 0.5);
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 15px;
+    width: 80px;
+    height: 40px;
+    margin: -40px 25px 10px 70%;
+}
+
+.enter-button a {
+    font-family: "Assistant", sans-serif;
+    font-weight: 500;
+    color: #000;
+}
+implement this ^^ once you have a better understanding of data-toggling */
+
+.footer {
+    background-color: #474747;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 64px;
+}
+
+.connect-with-me {
+    font-family: "Assistant", sans-serif;
+    font-weight: 400;
+    color: #e9f1f4;
+    text-transform: uppercase;
+    padding-top: 8px;
+}
+
+.social-links {
+    padding-top: 16px;
+    padding-bottom: 8px;
+    margin: 0;
+}
+
+.social-links li {
+    height: 40px;
+    width: 40px;
+}
+
+.social-links i {
+    color: #e9f1f4;
+    font-size: 24px;
+}
+
+.social-links i:hover {
+    color: rgb(244, 121, 26);
+}
+
+/*-----------------------------------------------------------Home*/
+
+.home-wrapper {
+    margin-top: 16vh;
+}
+
+.home-background-image {
+    background: url("../../assets/images/ricky-kharawala-308072-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    max-width: 100%;
+}
+
+.background-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.home-title {
+    font-family: "Dosis", sans-serif;
+    text-transform: uppercase;
+    color: #e9f1f4;
+    margin-top: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.home-quote {
+    margin-bottom: 24px;
+}
+
+.home-quote p {
+    font-family: "Assistant", sans-serif;
+    font-weight: 200;
+    text-align: center;
+    font-size: 16px;
+    padding: 16px;
+    color: #e9f1f4;
+    letter-spacing: 2px;
+}
+
+#home-enter-button {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #b25c23;
+    border-radius: 15px;
+    width: 80px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+#home-enter-button:hover {
+    background-color: #9e5221;
+}
+
+#home-enter-button a {
+    font-family: "Assistant", sans-serif;
+    font-weight: 200;
+    color: #e9f1f4;
+}
+
+
+/*-----------------------------------------------------------Nav Menu #TODO once I've learned more about data-toggle*/
+
+.nav-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.nav-bar {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: url("/assets/images/nav.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.nav-menu-items-wrapper {
+    position: absolute;
+    top: 10vh;
+}
+
+.nav-menu-heading {
+    font-family: "Dosis", sans-serif;
+    font-weight: 400;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    letter-spacing: 2px;
+}
+
+.nav-menu-itmes {
+    list-style: none;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu-itmes i {
+    padding: 24px 12px;
+}
+
+.nav-menu-itmes li:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/*li:hover .nav-menu-heading {
+    color: #fff;
+}
+
+li:hover i {
+    color: #000;
+}*/
+
+.nav-exit-button {
+    display: block;
+    padding: 16px;
+}
+
+.nav-exit-button i:hover {
+    font-size: 48px;
+}
+
+.nav-exit-button i {
+    font-size: 32px;
+    color: #fff;
+}
+
+.nav-anchor {
+    text-decoration: none !important;
+}
+
+.nav-anchor i {
+    font-size: 32px;
+    display: inline-block;
+    color: #fff;
+}
+
+.nav-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 64px;
+}
+
+/*-----------------------------------------------------------About*/
+
+.about-wrapper {
+    background-color: #474747;
+}
+
+.about-section {
+    clear: both;
+    padding-bottom: 90px;
+}
+
+.about-background-image {
+    display: inline-block;
+    background: url("../../assets/images/about-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    max-width: 100%;
+    padding: 0;
+}
+
+.about-quote {
+    margin: 0 auto;
+}
+
+.about-quote p {
+    font-family: "Assistant", sans-serif;
+    font-weight: 200;
+    text-align: center;
+    font-size: 16px;
+    padding: 16px;
+    color: #e9f1f4;
+    letter-spacing: 2px;
+}
+
+#about-mobile-menu-item {
+    color: #e9f1f4;
+}
+
+/*-----------------------------------------------------------Services*/
+
+.services-container {
+    background-color: #474747;
+    text-align: center;
+    padding-bottom: 64px;
+}
+
+.desktop-services-container {
+    text-align: center;
+}
+
+.services-section {
+    clear: both;
+}
+
+.services-background-image {
+    background: url("../../assets/images/dominik-scythe-283327-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    max-width: 100%;
+}
+
+.services-prices-wrapper {
+    padding: 16px;
+    display: inline-block;
+    width: 100%;
+
+}
+
+.services-sub-heading {
+    font-family: "Assistant", sans-serif;
+    color: #e9f1f4;
+    padding-bottom: 12px;
+}
+
+.services {
+    display: inline-block;
+    text-align: justify;
+
+}
+
+.prices {
+    display: inline-block;
+    margin-left: 28px;
+    text-align: justify;
+}
+
+.service-type {
+    padding-bottom: 16px;
+}
+
+.service-type p {
+    font-family: "Assistant", sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    color: #e9f1f4;
+}
+
+#services-mobile-menu-item {
+    color: #e9f1f4;
+}
+
+/*-----------------------------------------------------------Gallery*/
+
+.gallery-wrapper {
+    background-color: #474747;
+}
+
+.gallery-section {
+    clear: both;
+}
+
+.desktop-gallery-container {
+    text-align: center;
+}
+
+.gallery-background-image {
+    background: url("../../assets/images/gallery-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    max-width: 100%;
+}
+
+.gallery-of-images {
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+
+.gallery-image {
+    height: auto;
+    margin: 0 12px 24px 12px;
+}
+
+.gallery-image img {
+    border-top: 1px solid #b25c23;
+    border-left: 1px solid #b25c23;
+    border-right: 1px solid #b25c23;
+    height: auto;
+    max-width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.image-caption {
+    border-left: 1px solid #e9f1f4;
+    border-right: 1px solid #e9f1f4;
+    border-bottom: 1px solid #e9f1f4;
+    font-family: "Assistant", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+    background-color: #474747;
+    color: #e9f1f4;
+    padding: 4px 12px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#gallery-mobile-menu-item {
+    color: #e9f1f4;
+}
+
+/*-----------------------------------------------------------Contact*/
+
+.contact-wrapper {
+    background-color: #474747;
+    padding-bottom: 64px;
+    width: 100%;
+}
+
+.contact-section {
+    clear: both;
+}
+
+.contact-background-image {
+    background: url("../../assets/images/alexander-andrews-586348-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    max-width: 100%;
+}
+
+.contact-text {
+    font-family: "Assistant", sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+    color: #e9f1f4;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    margin-top: 8px;
+    display: block;
+}
+
+.idea-form {
+    display: block;
+}
+
+.form-row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.center-form {
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+#contact-button {
+    font-family: "Assistant", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 16px 0;
+    background-color: #286f31;
+    color: #e9f1f4;
+}
+
+#contact-button:hover {
+    background-color: #225e2a;
+}
+
+#fullname {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#emailaddress {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#ideasummary {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#contact-mobile-menu-item {
+    color: #e9f1f4;
+}
+
+/*-----------------------------------------------------------Media Queries*/
+
+@media (min-width: 768px) {
+    .col-md-6 {
+        max-width: 46%;
+    }
+
+    .nav-bar {
+        max-width: 50%;
+        left: 50%;
+        /* on toggle 100% - 50% */
+    }
+
+    .nav-overlay {
+        max-width: 50%;
+        right: 50%;
+        /* on toggle 100% - 50% */
+    }
+
+    .nav-menu-items-wrapper {
+        top: 26vh;
+    }
+
+    #home-enter-button {
+        text-align: center;
+        text-transform: uppercase;
+        background-color: #b25c23;
+        border-radius: 15px;
+        width: 100px;
+        height: 50px;
+        margin: 0 auto;
+    }
+
+    #home-enter-button a {
+        font-family: "Assistant", sans-serif;
+        font-size: 24px;
+        font-weight: 200;
+        color: #e9f1f4;
+    }
+
+    .home-wrapper {
+        margin-top: 20vh;
+    }
+
+    .header-title {
+        display: inline-block;
+        font-family: "Dosis", sans-serif;
+        text-transform: uppercase;
+        color: #e9f1f4;
+        background-color: #474747;
+        margin-top: 0px;
+        padding-top: 5px;
+    }
+
+    .enter-button {
+        border: 1px solid #000;
+        background-color: rgba(244, 121, 26, 0.5);
+        text-align: center;
+        text-transform: uppercase;
+        border-radius: 15px;
+        width: 80px;
+        height: 40px;
+        margin: -40px 25px 10px 88%;
+    }
+
+    .about-quote {
+        margin: 0 auto;
+        max-width: 70%;
+        padding-top: 50px;
+    }
+
+    .about-quote p {
+        font-family: "Assistant", sans-serif;
+        font-weight: 200;
+        text-align: center;
+        font-size: 24px;
+        padding: 16px;
+        color: #e9f1f4;
+        letter-spacing: 2px;
+    }
+
+    .home-quote p {
+        font-family: "Assistant", sans-serif;
+        font-weight: 200;
+        text-align: center;
+        font-size: 24px;
+        padding: 32px 152px;
+        margin-bottom: 36px;
+        color: #e9f1f4;
+        letter-spacing: 2px;
+    }
+
+    .menu-heading {
+        font-family: "Dosis", sans-serif;
+        font-weight: 400;
+        color: #e9f1f4;
+        text-transform: uppercase;
+        text-align: center;
+        display: inline-block;
+        letter-spacing: 2px;
+        font-size: 48px;
+    }
+
+    .menu-item i {
+        display: inline-block;
+        color: #000;
+        font-size: 48px;
+    }
+
+    #header-title-1,
+    #header-title-2 {
+        font-size: 64px;
+    }
+
+    hr {
+        width: 240px;
+        border-top: 2px solid #b25c23;
+        margin-top: 8px;
+        margin-bottom: 4px;
+    }
+
+    .services {
+        display: inline-block;
+        text-align: justify;
+        width: 50%;
+        padding-top: 72px;
+    }
+
+    .services-sub-heading {
+        font-size: 32px;
+    }
+
+    .service-type p {
+        font-size: 24px;
+    }
+
+    .gallery-image {
+        height: auto;
+        margin: 12px auto;
+    }
+
+    #contact-button {
+        margin: 16px 0;
+        background-color: #286f31;
+        color: #e9f1f4;
+        height: 50px;
+        width: 120px;
+        font-family: "Assistant", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    .contact-text {
+        font-family: "Assistant", sans-serif;
+        font-weight: 300;
+        font-size: 36px;
+        color: #e9f1f4;
+        padding-bottom: 16px;
+        padding-top: 16px;
+        margin-top: 8px;
+        display: block;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    .offset-lg-4 {
+        margin-left: 0;
+    }
+
+    .col-lg-3 {
+        flex: 0 0 22%;
+    }
+    
+    .home-wrapper {
+        margin-top: 25vh;
+    }
+
+    .header-title {
+        display: inline-block;
+        font-family: "Dosis", sans-serif;
+        text-transform: uppercase;
+        color: #e9f1f4;
+        background-color: #474747;
+        margin-top: 0;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-left: 16px;
+    }
+
+    #header-title-1,
+    #header-title-2 {
+        font-size: 48px;
+    }
+
+    hr {
+        width: 182px;
+        border-top: 2px solid #b25c23;
+        margin-top: 8px;
+        margin-bottom: 4px;
+    }
+
+    .enter-button {
+        display: none;
+    }
+
+    .menu-heading {
+        display: none;
+    }
+
+    .section-header i {
+        display: none;
+    }
+
+    .menu-item {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 12px 12px 60px 12px;
+        overflow: hidden;
+        margin: 0 auto;
+        height: inherit;
+    }
+
+    .nav-bar {
+        max-width: 25%;
+        left: 75%;
+        /* on toggle 100% - 75% */
+    }
+
+    .nav-overlay {
+        max-width: 75%;
+        right: 25%;
+        /* on toggle 100% - 25% */
+    }
+
+    .about-section {
+        clear: both;
+        padding-bottom: 0px;
+    }
+
+    .about-background-image {
+        height: 77vh;
+    }
+
+    .about-quote {
+        margin: 0 auto;
+        max-width: 60%;
+    }
+
+    .about-wrapper {
+        display: none;
+    }
+
+    .services-container {
+        display: none;
+    }
+
+    .services {
+        display: inline-block;
+        text-align: justify;
+        width: 50%;
+        padding-top: 0;
+        padding-left: 28px;
+    }
+
+    .services-background-image {
+        height: 77vh;
+    }
+
+    .services-prices-wrapper {
+        padding: 64px 0 0 0;
+    }
+
+    .prices {
+        display: inline-block;
+        margin-left: 0;
+        text-align: justify;
+    }
+
+    .gallery-background-image {
+        height: 77vh;
+    }
+
+    .gallery-wrapper {
+        display: none;
+    }
+
+    .gallery-image {
+        max-width: 25% !important;
+        margin: auto;
+    }
+
+    .contact-background-image {
+        height: 77vh;
+    }
+
+    .contact-wrapper {
+        display: none;
+    }
+
+    .contact-text {
+        padding-top: 64px;
+    }
+
+    .form-row {
+        padding-top: 8px;
+    }
+
+    .footer {
+        background-color: #474747;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 105px;
+    }
+}
+
+/*-----------------------------------------------------------Hover.css*/
+
+.hvr-rectangle-out:before {
+    background-color: rgba(0, 0, 0, 0.2);
+}
